@@ -13,7 +13,7 @@ body{
     display:flex;justify-content:center;align-items:center;
     padding:16px;color:#ddd;
 }
-.wrap{width:100%;max-width:440px}
+.wrap{width:100%;max-width:420px}
 .card{
     background:linear-gradient(145deg,#12122a,#1a1a38);
     border:1px solid rgba(255,165,30,.25);
@@ -21,157 +21,78 @@ body{
 }
 .top{
     background:linear-gradient(135deg,#1e1e42,#16163a);
-    padding:22px 18px 16px;text-align:center;
+    padding:20px 16px 14px;text-align:center;
     border-bottom:1px solid rgba(255,255,255,.05);
 }
-.top-icon{font-size:34px;margin-bottom:4px}
-.top-title{font-size:19px;font-weight:800;color:#ffa520}
+.top-icon{font-size:32px;margin-bottom:4px}
+.top-title{font-size:18px;font-weight:800;color:#ffa520}
 .top-sub{font-size:10px;color:#777;margin-top:2px}
 .badge-row{display:flex;justify-content:center;gap:5px;margin-top:8px;flex-wrap:wrap}
-.badge{font-size:8px;font-weight:700;padding:2px 9px;border-radius:10px;display:inline-block}
+.badge{font-size:8px;font-weight:700;padding:2px 9px;border-radius:10px}
 .badge-v{background:#ffa520;color:#111}
 .badge-s{background:rgba(50,170,65,.2);color:#3aba45;border:1px solid rgba(50,170,65,.3)}
 .badge-d{background:rgba(100,140,255,.15);color:#7ba4ff;border:1px solid rgba(100,140,255,.25)}
-.body{padding:18px}
-
-/* STEPS */
+.body{padding:16px}
 .sec{display:none}
 .sec.on{display:block;animation:fadeUp .3s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-
-/* PROGRESS DOTS */
-.prog{display:flex;align-items:center;justify-content:center;gap:4px;margin-bottom:18px}
+.prog{display:flex;align-items:center;justify-content:center;gap:4px;margin-bottom:16px}
 .dot{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;transition:.3s}
 .dot.on{background:#ffa520;color:#111}
 .dot.ok{background:#30a83e;color:#fff}
 .dot.off{background:rgba(255,255,255,.06);color:#444}
 .line{width:22px;height:2px;background:rgba(255,255,255,.06);transition:.3s}
 .line.ok{background:#30a83e}
-
-/* CHECKPOINT */
-.ckpt{
-    background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);
-    border-radius:6px;padding:16px;text-align:center;margin-bottom:12px;
-}
-.ckpt-num{font-size:28px;font-weight:900;color:#ffa520;font-family:'Courier New',monospace;margin-bottom:2px}
+.ckpt{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:14px;text-align:center;margin-bottom:12px}
+.ckpt-num{font-size:26px;font-weight:900;color:#ffa520;font-family:'Courier New',monospace;margin-bottom:2px}
 .ckpt-label{font-size:9px;color:#666;text-transform:uppercase;letter-spacing:1.5px}
-
-/* LINKVERTISE BOX */
-.lv-box{
-    background:linear-gradient(135deg,rgba(52,112,210,.12),rgba(52,112,210,.05));
-    border:1px solid rgba(52,112,210,.3);
-    border-radius:6px;padding:16px;text-align:center;margin-bottom:12px;
-}
-.lv-icon{font-size:28px;margin-bottom:6px}
-.lv-title{font-size:13px;font-weight:700;color:#7ba4ff;margin-bottom:4px}
-.lv-desc{font-size:10px;color:#666;line-height:1.5;margin-bottom:12px}
-.lv-steps{text-align:left;margin:10px 0}
-.lv-step{font-size:10px;color:#888;padding:3px 0;display:flex;gap:6px}
+.lv-box{background:linear-gradient(135deg,rgba(52,112,210,.12),rgba(52,112,210,.05));border:1px solid rgba(52,112,210,.3);border-radius:6px;padding:14px;text-align:center;margin-bottom:12px}
+.lv-icon{font-size:26px;margin-bottom:4px}
+.lv-title{font-size:12px;font-weight:700;color:#7ba4ff;margin-bottom:4px}
+.lv-desc{font-size:10px;color:#666;line-height:1.5;margin-bottom:10px}
+.lv-steps{text-align:left;margin:8px 0}
+.lv-step{font-size:10px;color:#888;padding:2px 0;display:flex;gap:6px}
 .lv-step b{color:#ffa520;min-width:14px}
-
-/* TIMER */
 .tbar{width:100%;height:4px;background:rgba(255,255,255,.06);border-radius:2px;margin:12px 0 8px;overflow:hidden}
 .tfill{height:100%;background:#ffa520;border-radius:2px;width:0%;transition:width .15s linear}
 .ttext{font-size:11px;color:#666;text-align:center;margin-bottom:6px}
-
-/* LOG */
-.log{
-    background:rgba(0,0,0,.25);border-radius:4px;padding:10px 12px;
-    margin:10px 0;font-family:'Courier New',monospace;font-size:9px;
-    color:#555;line-height:1.7;max-height:85px;overflow:hidden;
-}
+.log{background:rgba(0,0,0,.25);border-radius:4px;padding:10px;margin:10px 0;font-family:'Courier New',monospace;font-size:9px;color:#555;line-height:1.7;max-height:80px;overflow:hidden}
 .log .ok{color:#30a83e}
 .log .hl{color:#ffa520}
 .log .bl{color:#7ba4ff}
-
-/* KEY BOX */
-.keybox{
-    background:rgba(255,165,30,.06);border:2px solid rgba(255,165,30,.35);
-    border-radius:6px;padding:20px 14px;text-align:center;margin:12px 0;
-}
+.keybox{background:rgba(255,165,30,.06);border:2px solid rgba(255,165,30,.35);border-radius:6px;padding:18px 14px;text-align:center;margin:12px 0}
 .keybox-label{font-size:8px;color:#666;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
-.keybox-val{
-    font-size:24px;font-weight:900;color:#ffa520;letter-spacing:3px;
-    font-family:'Courier New',monospace;word-break:break-all;user-select:all;line-height:1.3;
-}
-.keybox-exp{font-size:9px;color:#555;margin-top:10px}
-
-/* EXPIRE */
-.expire-row{display:flex;justify-content:center;gap:8px;margin-top:10px}
+.keybox-val{font-size:22px;font-weight:900;color:#ffa520;letter-spacing:3px;font-family:'Courier New',monospace;word-break:break-all;user-select:all;line-height:1.3}
+.keybox-exp{font-size:9px;color:#555;margin-top:8px}
+.expire-row{display:flex;justify-content:center;gap:8px;margin-top:8px}
 .expire-unit{text-align:center}
-.expire-num{
-    font-size:16px;font-weight:800;color:#7ba4ff;font-family:'Courier New',monospace;
-    background:rgba(100,140,255,.1);border-radius:4px;padding:3px 7px;min-width:32px;display:inline-block;
-}
+.expire-num{font-size:15px;font-weight:800;color:#7ba4ff;font-family:'Courier New',monospace;background:rgba(100,140,255,.1);border-radius:4px;padding:3px 6px;min-width:30px;display:inline-block}
 .expire-txt{font-size:7px;color:#555;margin-top:2px;text-transform:uppercase}
-
-/* BUTTONS */
-.btn{
-    display:flex;align-items:center;justify-content:center;gap:6px;
-    width:100%;padding:12px;border:none;border-radius:6px;
-    font-size:13px;font-weight:700;cursor:pointer;transition:.2s;
-    text-decoration:none;
-}
+.btn{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;padding:11px;border:none;border-radius:6px;font-size:13px;font-weight:700;cursor:pointer;transition:.2s;text-decoration:none;color:#fff}
 .btn:hover{transform:translateY(-1px);filter:brightness(1.1)}
 .btn:active{transform:translateY(0)}
 .btn:disabled{opacity:.4;cursor:not-allowed;transform:none!important}
-.btn-lv{background:linear-gradient(135deg,#3470d2,#2855a8);color:#fff;font-size:14px;padding:14px}
+.btn-lv{background:linear-gradient(135deg,#3470d2,#2855a8);color:#fff;font-size:14px;padding:13px}
 .btn-go{background:#ffa520;color:#111}
 .btn-copy{background:linear-gradient(135deg,#ffa520,#ff8800);color:#111;font-size:14px}
-.btn-dim{background:rgba(255,255,255,.06);color:#888;border:1px solid rgba(255,255,255,.08)}
-.btn-green{background:#30a83e;color:#fff}
+.btn-dim{background:rgba(255,255,255,.06);color:#888;border:1px solid rgba(255,255,255,.08);margin-top:8px}
 .btn-row{display:flex;gap:8px;margin-top:8px}
 .btn-row .btn{flex:1}
-
-/* HOWTO */
-.howto{
-    background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);
-    border-radius:6px;padding:12px;margin-top:12px;
-}
+.howto{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:12px;margin-top:12px}
 .howto-t{font-size:10px;font-weight:700;color:#999;margin-bottom:6px}
 .howto-s{font-size:9px;color:#666;padding:2px 0;display:flex;gap:6px}
 .howto-s b{color:#ffa520;min-width:14px}
-
-/* FEATURES */
-.feat{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:14px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:12px}
 .feat-i{background:rgba(255,255,255,.04);border-radius:6px;padding:8px;text-align:center}
 .feat-ic{font-size:16px;margin-bottom:2px}
 .feat-tx{font-size:9px;color:#999}
-
-/* WARN */
-.warn{
-    background:rgba(255,165,30,.08);border:1px solid rgba(255,165,30,.2);
-    border-radius:4px;padding:8px 12px;margin:10px 0;
-    font-size:9px;color:#cc9933;text-align:center;
-}
-
-/* FOOTER */
-.foot{padding:12px 18px;border-top:1px solid rgba(255,255,255,.04);text-align:center}
+.warn{background:rgba(255,165,30,.08);border:1px solid rgba(255,165,30,.2);border-radius:4px;padding:8px 10px;margin:10px 0;font-size:9px;color:#cc9933;text-align:center}
+.foot{padding:12px 16px;border-top:1px solid rgba(255,255,255,.04);text-align:center}
 .foot-t{font-size:8px;color:#444}
 .foot-a{color:#ffa520;text-decoration:none}
-
-/* TOAST */
-.toast{
-    position:fixed;top:14px;left:50%;transform:translateX(-50%) translateY(-70px);
-    background:#30a83e;color:#fff;padding:9px 20px;border-radius:6px;
-    font-size:11px;font-weight:700;transition:transform .3s;z-index:99;
-}
+.toast{position:fixed;top:14px;left:50%;transform:translateX(-50%) translateY(-70px);background:#30a83e;color:#fff;padding:9px 20px;border-radius:6px;font-size:11px;font-weight:700;transition:transform .3s;z-index:99}
 .toast.show{transform:translateX(-50%) translateY(0)}
-
-/* BLOCKED */
-.blocked{
-    background:rgba(192,46,46,.1);border:1px solid rgba(192,46,46,.3);
-    border-radius:6px;padding:14px;text-align:center;margin:10px 0;
-}
-.blocked-t{font-size:12px;font-weight:700;color:#c02e2e;margin-bottom:4px}
-.blocked-d{font-size:9px;color:#884444}
-
-@media(max-width:460px){
-    .body{padding:14px 12px}
-    .keybox-val{font-size:19px;letter-spacing:2px}
-    .top{padding:16px 12px 12px}
-    .top-title{font-size:16px}
-}
+@media(max-width:440px){.body{padding:14px 12px}.keybox-val{font-size:18px;letter-spacing:2px}.top-title{font-size:16px}}
 </style>
 </head>
 <body>
@@ -201,7 +122,7 @@ body{
     <div class="dot off" id="d3">3</div>
 </div>
 
-<!-- ═══ STEP 1: LINKVERTISE ═══ -->
+<!-- STEP 1: LINKVERTISE -->
 <div class="sec on" id="s1">
     <div class="ckpt">
         <div class="ckpt-label">checkpoint</div>
@@ -217,33 +138,33 @@ body{
 
     <div class="lv-box">
         <div class="lv-icon">🔗</div>
-        <div class="lv-title">Complete Linkvertise to Continue</div>
+        <div class="lv-title">Complete Link to Continue</div>
         <div class="lv-desc">
             Support the developer by completing<br>
             1 short link to unlock key generation.
         </div>
         <div class="lv-steps">
             <div class="lv-step"><b>1.</b> Click the button below</div>
-            <div class="lv-step"><b>2.</b> Complete the Linkvertise page</div>
-            <div class="lv-step"><b>3.</b> You'll be redirected back here</div>
-            <div class="lv-step"><b>4.</b> Key generates automatically!</div>
+            <div class="lv-step"><b>2.</b> Complete the page that opens</div>
+            <div class="lv-step"><b>3.</b> Come back here & click "Done"</div>
+            <div class="lv-step"><b>4.</b> Your key generates automatically!</div>
         </div>
     </div>
 
-    <a class="btn btn-lv" id="lvBtn" href="#" onclick="goLinkvertise(event)">
+    <a class="btn btn-lv" id="lvBtn" href="https://direct-link.net/4349611/vXjO9OtSjsYU" target="_blank" rel="noopener">
         🔓 Complete Link to Get Key
     </a>
 
     <div class="warn">
-        ⚠️ Do NOT use ad-blockers — Linkvertise may not work properly.
+        ⚠️ Disable ad-blocker if the link doesn't work.
     </div>
 
-    <button class="btn btn-dim" style="margin-top:8px" onclick="checkReturn()">
-        ✅ I Already Completed It
+    <button class="btn btn-dim" id="doneBtn" onclick="checkDone()">
+        ✅ I Completed the Link
     </button>
 </div>
 
-<!-- ═══ STEP 2: GENERATING ═══ -->
+<!-- STEP 2: GENERATING -->
 <div class="sec" id="s2">
     <div class="ckpt">
         <div class="ckpt-label">checkpoint</div>
@@ -254,14 +175,14 @@ body{
     <div class="tbar"><div class="tfill" id="tf"></div></div>
 
     <div class="log" id="logBox">
-        <span class="bl">[SYS]</span> Linkvertise verified ✓<br>
+        <span class="bl">[SYS]</span> Link verified ✓<br>
         <span class="bl">[SYS]</span> Starting key generator...<br>
     </div>
 
-    <button class="btn btn-dim" disabled>⏳ Generating key...</button>
+    <button class="btn btn-dim" disabled style="margin-top:0">⏳ Generating key...</button>
 </div>
 
-<!-- ═══ STEP 3: KEY READY ═══ -->
+<!-- STEP 3: KEY READY -->
 <div class="sec" id="s3">
     <div class="keybox">
         <div class="keybox-label">⭐ your premium key</div>
@@ -286,36 +207,18 @@ body{
     <button class="btn btn-copy" onclick="copyKey()">📋 Copy Key</button>
 
     <div class="btn-row">
-        <button class="btn btn-dim" onclick="resetAll()">🔄 New Key</button>
-        <button class="btn btn-dim" onclick="copyKey()">📱 Share</button>
+        <button class="btn btn-dim" onclick="location.reload()" style="margin-top:0">🔄 New Key</button>
+        <button class="btn btn-dim" onclick="copyKey()" style="margin-top:0">📱 Share</button>
     </div>
 
     <div class="howto">
-        <div class="howto-t">How to use:</div>
+        <div class="howto-t">How to use in Roblox:</div>
         <div class="howto-s"><b>1.</b> Copy the key above</div>
         <div class="howto-s"><b>2.</b> Open Roblox → Virtual Drums</div>
         <div class="howto-s"><b>3.</b> Execute Auto Drum script</div>
         <div class="howto-s"><b>4.</b> Paste key → Click "Unlock"</div>
         <div class="howto-s"><b>5.</b> All 16 songs unlocked! 🥁</div>
     </div>
-
-    <button class="btn btn-dim" style="margin-top:8px" onclick="resetAll()">
-        🔄 Generate Another Key
-    </button>
-</div>
-
-<!-- ═══ BLOCKED (if not verified) ═══ -->
-<div class="sec" id="s_blocked">
-    <div class="blocked">
-        <div class="blocked-t">❌ Verification Required</div>
-        <div class="blocked-d">
-            You need to complete the Linkvertise<br>
-            checkpoint before generating a key.
-        </div>
-    </div>
-    <button class="btn btn-lv" style="margin-top:10px" onclick="resetAll()">
-        ← Go Back & Complete Link
-    </button>
 </div>
 
 </div>
@@ -332,45 +235,21 @@ body{
 </div>
 
 <script>
-// ════════════════════════════════════════
-// CONFIGURATION — EDIT THESE!
-// ════════════════════════════════════════
+// ════════════════════════════════════
+// LINKVERTISE URL (your link)
+// ════════════════════════════════════
+const LV_URL = "https://direct-link.net/4349611/vXjO9OtSjsYU";
 
-// 🔧 Replace with YOUR Linkvertise user ID (number from dashboard)
-const LINKVERTISE_ID = "4349611";
-
-// 🔧 The URL users return to after Linkvertise (this page)
-const RETURN_URL = window.location.origin + window.location.pathname + "?verified=1&t=" + Date.now();
-
-// 🔧 Linkvertise link format (choose one):
-// Option A: direct-link.net (most common)
-function getLinkvertiseURL() {
-    return `https://direct-link.net/${LINKVERTISE_ID}/${genLinkToken()}/dynamic/?r=${encodeURIComponent(RETURN_URL)}`;
-}
-
-// Option B: linkvertise.com (alternative — uncomment if preferred)
-// function getLinkvertiseURL() {
-//     return `https://linkvertise.com/${LINKVERTISE_ID}/auto-drum-key?r=${encodeURIComponent(RETURN_URL)}`;
-// }
-
-// Option C: link-to.net (alternative)
-// function getLinkvertiseURL() {
-//     return `https://link-to.net/${LINKVERTISE_ID}/${genLinkToken()}/dynamic/?r=${encodeURIComponent(RETURN_URL)}`;
-// }
-
-function genLinkToken() {
-    return Math.random().toString(36).substring(2, 10);
-}
-
-// ════════════════════════════════════════
-// KEY GENERATION (same as Lua script!)
-// ════════════════════════════════════════
+// ════════════════════════════════════
+// KEY GENERATION (same as Lua script)
+// ════════════════════════════════════
 const CHARSET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
 
-function genKey(dateObj) {
-    const d = dateObj.getDate();
-    const m = dateObj.getMonth() + 1;
-    const y = dateObj.getFullYear();
+function genKey() {
+    const now = new Date();
+    const d = now.getDate();
+    const m = now.getMonth() + 1;
+    const y = now.getFullYear();
     let seed = d * 2731 + m * 1487 + y * 317 + 9973;
     function nxt() {
         seed = (seed * 16807 + 12345) % 2147483647;
@@ -384,147 +263,107 @@ function genKey(dateObj) {
     return key;
 }
 
-function todayKey() { return genKey(new Date()); }
-
-// ════════════════════════════════════════
+// ════════════════════════════════════
 // VERIFICATION STATE
-// ════════════════════════════════════════
-const STORAGE_KEY = "autodrum_lv_verified";
-const STORAGE_TIME = "autodrum_lv_time";
+// ════════════════════════════════════
+const SK = "ad_lv_ok";
+const ST = "ad_lv_time";
+const SC = "ad_lv_click";
 
 function isVerified() {
-    // Check URL params (returning from Linkvertise)
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("verified") === "1") {
-        // Save verification
-        localStorage.setItem(STORAGE_KEY, "1");
-        localStorage.setItem(STORAGE_TIME, Date.now().toString());
-        // Clean URL
-        window.history.replaceState({}, document.title, window.location.pathname);
-        return true;
-    }
-    
-    // Check localStorage (already verified today)
-    const saved = localStorage.getItem(STORAGE_KEY);
-    const savedTime = parseInt(localStorage.getItem(STORAGE_TIME) || "0");
-    const now = Date.now();
-    const hoursSince = (now - savedTime) / 3600000;
-    
-    // Valid for 24 hours
-    if (saved === "1" && hoursSince < 24) {
-        return true;
-    }
-    
-    return false;
+    const ok = localStorage.getItem(SK);
+    const time = parseInt(localStorage.getItem(ST) || "0");
+    const hrs = (Date.now() - time) / 3600000;
+    return ok === "1" && hrs < 24;
 }
 
 function markVerified() {
-    localStorage.setItem(STORAGE_KEY, "1");
-    localStorage.setItem(STORAGE_TIME, Date.now().toString());
+    localStorage.setItem(SK, "1");
+    localStorage.setItem(ST, Date.now().toString());
 }
 
-// ════════════════════════════════════════
-// LINKVERTISE FLOW
-// ════════════════════════════════════════
-function goLinkvertise(e) {
-    e.preventDefault();
-    
-    const btn = document.getElementById('lvBtn');
-    btn.textContent = '⏳ Opening Linkvertise...';
-    btn.style.opacity = '0.7';
-    
-    // Open Linkvertise in new tab/same window
-    const lvURL = getLinkvertiseURL();
-    
-    setTimeout(() => {
-        window.open(lvURL, '_blank');
-        
-        // Show "I completed it" more prominently after clicking
-        btn.textContent = '🔗 Complete Link to Get Key';
-        btn.style.opacity = '1';
-        
-        // Also try same-window redirect after delay
-        // (in case popup was blocked)
-        setTimeout(() => {
-            if (!isVerified()) {
-                btn.innerHTML = '⚠️ Popup blocked? <br>Click again or try below';
-                btn.style.fontSize = '11px';
-            }
-        }, 3000);
-    }, 500);
+function markClicked() {
+    localStorage.setItem(SC, Date.now().toString());
 }
 
-function checkReturn() {
-    // User claims they completed it
-    // In production, you'd verify with Linkvertise API
-    // For now, we check if they at least clicked the link
-    
-    const params = new URLSearchParams(window.location.search);
-    
-    if (params.get("verified") === "1" || isVerified()) {
-        markVerified();
-        showSec(2);
-        runTimer();
-    } else {
-        // Show prompt — give benefit of doubt with a captcha-style check
-        showConfirmDialog();
-    }
+function wasClicked() {
+    const t = parseInt(localStorage.getItem(SC) || "0");
+    return (Date.now() - t) < 600000; // clicked within 10 min
 }
 
-function showConfirmDialog() {
-    // Simple verification: ask user a question to prove they completed it
-    const nums = [
-        Math.floor(Math.random() * 9) + 1,
-        Math.floor(Math.random() * 9) + 1
-    ];
-    const answer = nums[0] + nums[1];
-    
-    const userAnswer = prompt(
-        `Quick verification: What is ${nums[0]} + ${nums[1]}?\n\n` +
-        `(This confirms you completed the Linkvertise link)`
-    );
-    
-    if (userAnswer !== null && parseInt(userAnswer) === answer) {
-        markVerified();
-        showSec(2);
-        runTimer();
-    } else if (userAnswer !== null) {
-        alert("❌ Wrong answer. Please complete the Linkvertise link first!");
-        showSec('_blocked');
-    }
-}
-
-// ════════════════════════════════════════
-// UI LOGIC
-// ════════════════════════════════════════
+// ════════════════════════════════════
+// UI
+// ════════════════════════════════════
 let currentKey = "";
 let genTimer = null;
-let expireTimer = null;
+let expTimer = null;
 
 function showSec(n) {
     document.querySelectorAll('.sec').forEach(s => s.classList.remove('on'));
-    
-    if (typeof n === 'string') {
-        document.getElementById('s' + n).classList.add('on');
-        return;
-    }
-    
     document.getElementById('s' + n).classList.add('on');
-    
     for (let i = 1; i <= 3; i++) {
         const dot = document.getElementById('d' + i);
         dot.className = 'dot ' + (i < n ? 'ok' : (i === n ? 'on' : 'off'));
-        if (i < n) dot.textContent = '✓';
-        else dot.textContent = i;
+        dot.textContent = i < n ? '✓' : i;
     }
     document.getElementById('ln1').className = 'line' + (n > 1 ? ' ok' : '');
     document.getElementById('ln2').className = 'line' + (n > 2 ? ' ok' : '');
 }
 
-// ════════════════════════════════════════
-// STEP 2: TIMER + LOG
-// ════════════════════════════════════════
-function runTimer() {
+// Track when user clicks Linkvertise
+document.getElementById('lvBtn').addEventListener('click', function() {
+    markClicked();
+    // Change button text after click
+    setTimeout(() => {
+        document.getElementById('doneBtn').style.background = 'rgba(50,170,65,.15)';
+        document.getElementById('doneBtn').style.borderColor = 'rgba(50,170,65,.3)';
+        document.getElementById('doneBtn').style.color = '#3aba45';
+        document.getElementById('doneBtn').textContent = '✅ I Completed the Link — Click Here';
+    }, 2000);
+});
+
+// ════════════════════════════════════
+// CHECK DONE
+// ════════════════════════════════════
+function checkDone() {
+    // Already verified today
+    if (isVerified()) {
+        startGen();
+        return;
+    }
+
+    // Check if they at least clicked the link
+    if (!wasClicked()) {
+        alert("⚠️ Please click the link button first!\n\nComplete the link, then come back and click 'I Completed the Link'.");
+        return;
+    }
+
+    // Simple math verify to confirm human
+    const a = Math.floor(Math.random() * 9) + 1;
+    const b = Math.floor(Math.random() * 9) + 1;
+    const answer = a + b;
+
+    const user = prompt(
+        "Quick verification ✅\n\n" +
+        "What is " + a + " + " + b + "?\n\n" +
+        "(This confirms you completed the link)"
+    );
+
+    if (user === null) return; // cancelled
+
+    if (parseInt(user) === answer) {
+        markVerified();
+        startGen();
+    } else {
+        alert("❌ Wrong answer!\n\nPlease complete the link first, then try again.");
+    }
+}
+
+// ════════════════════════════════════
+// START GENERATING
+// ════════════════════════════════════
+function startGen() {
+    showSec(2);
     let t = 15;
     const fill = document.getElementById('tf');
     const text = document.getElementById('tt');
@@ -532,29 +371,28 @@ function runTimer() {
 
     const msgs = [
         {at:14.5, m:'<span class="bl">[SYS]</span> Connecting to server...'},
-        {at:13,   m:'<span class="ok">[OK]</span> Session: '+rndHex(8)},
-        {at:11,   m:'<span class="bl">[SYS]</span> Validating Linkvertise token...'},
-        {at:10,   m:'<span class="ok">[OK]</span> Token verified ✓'},
-        {at:8.5,  m:'<span class="bl">[SYS]</span> Computing seed: '+seedPreview()},
+        {at:13,   m:'<span class="ok">[OK]</span> Session: '+rHex(8)},
+        {at:11,   m:'<span class="bl">[SYS]</span> Validating link completion...'},
+        {at:10,   m:'<span class="ok">[OK]</span> Link verified ✓'},
+        {at:8.5,  m:'<span class="bl">[SYS]</span> Computing daily seed...'},
         {at:7,    m:'<span class="ok">[OK]</span> Date: '+new Date().toISOString().split('T')[0]},
         {at:5.5,  m:'<span class="bl">[GEN]</span> Generating key bytes...'},
-        {at:4,    m:'<span class="hl">[KEY]</span> Fragment: '+todayKey().substring(0,4)+'...'},
+        {at:4,    m:'<span class="hl">[KEY]</span> Fragment: '+genKey().substring(0,4)+'...'},
         {at:2.5,  m:'<span class="bl">[GEN]</span> Applying checksum...'},
         {at:1.5,  m:'<span class="ok">[OK]</span> Checksum valid'},
         {at:0.5,  m:'<span class="hl">[KEY]</span> ✅ Key generated!'},
     ];
-    let msgIdx = 0;
+    let mi = 0;
 
     genTimer = setInterval(() => {
         t -= 0.1;
-        const pct = ((15 - t) / 15) * 100;
-        fill.style.width = pct + '%';
+        fill.style.width = ((15 - t) / 15 * 100) + '%';
         text.textContent = 'Generating... ' + Math.max(0, Math.ceil(t)) + 's';
 
-        while (msgIdx < msgs.length && t <= msgs[msgIdx].at) {
-            log.innerHTML += msgs[msgIdx].m + '<br>';
-            log.scrollTop = log.scrollHeight;
-            msgIdx++;
+        while (mi < msgs.length && t <= msgs[mi].at) {
+            log.innerHTML += msgs[mi].m + '<br>';
+            log.scrollTop = 99999;
+            mi++;
         }
 
         if (t <= 0) {
@@ -564,7 +402,7 @@ function runTimer() {
             text.textContent = '✅ Complete!';
 
             setTimeout(() => {
-                currentKey = todayKey();
+                currentKey = genKey();
                 document.getElementById('keyVal').textContent = currentKey;
                 startExpire();
                 showSec(3);
@@ -573,38 +411,33 @@ function runTimer() {
     }, 100);
 }
 
-function rndHex(len) {
+function rHex(n) {
     let r = '';
-    for (let i = 0; i < len; i++) r += '0123456789abcdef'[Math.floor(Math.random()*16)];
+    for (let i = 0; i < n; i++) r += '0123456789abcdef'[Math.floor(Math.random()*16)];
     return r;
 }
 
-function seedPreview() {
-    const d = new Date();
-    return (d.getDate()*2731 + (d.getMonth()+1)*1487 + d.getFullYear()*317 + 9973).toString();
-}
-
-// ════════════════════════════════════════
+// ════════════════════════════════════
 // EXPIRE COUNTDOWN
-// ════════════════════════════════════════
+// ════════════════════════════════════
 function startExpire() {
-    function update() {
+    function upd() {
         const now = new Date();
         const tmr = new Date(now);
         tmr.setDate(tmr.getDate() + 1);
         tmr.setHours(0, 0, 0, 0);
-        const diff = tmr - now;
-        document.getElementById('expH').textContent = String(Math.floor(diff / 3600000)).padStart(2, '0');
-        document.getElementById('expM').textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
-        document.getElementById('expS').textContent = String(Math.floor((diff % 60000) / 1000)).padStart(2, '0');
+        const d = tmr - now;
+        document.getElementById('expH').textContent = String(Math.floor(d/3600000)).padStart(2,'0');
+        document.getElementById('expM').textContent = String(Math.floor((d%3600000)/60000)).padStart(2,'0');
+        document.getElementById('expS').textContent = String(Math.floor((d%60000)/1000)).padStart(2,'0');
     }
-    update();
-    expireTimer = setInterval(update, 1000);
+    upd();
+    expTimer = setInterval(upd, 1000);
 }
 
-// ════════════════════════════════════════
+// ════════════════════════════════════
 // COPY KEY
-// ════════════════════════════════════════
+// ════════════════════════════════════
 function copyKey() {
     if (!currentKey) return;
     if (navigator.clipboard) {
@@ -616,10 +449,12 @@ function copyKey() {
 
 function fbCopy(t) {
     const ta = document.createElement('textarea');
-    ta.value = t; ta.style.position = 'fixed'; ta.style.left = '-9999px';
-    document.body.appendChild(ta); ta.select();
+    ta.value = t;
+    ta.style.cssText = 'position:fixed;left:-9999px';
+    document.body.appendChild(ta);
+    ta.select();
     try { document.execCommand('copy'); showToast(); }
-    catch(e) { alert('Key: ' + t); }
+    catch(e) { alert('Your key:\n\n' + t + '\n\nCopy it manually!'); }
     document.body.removeChild(ta);
 }
 
@@ -629,53 +464,27 @@ function showToast() {
     setTimeout(() => t.classList.remove('show'), 2500);
 }
 
-// ════════════════════════════════════════
-// RESET
-// ════════════════════════════════════════
-function resetAll() {
-    if (genTimer) clearInterval(genTimer);
-    if (expireTimer) clearInterval(expireTimer);
-
-    document.getElementById('lvBtn').textContent = '🔓 Complete Link to Get Key';
-    document.getElementById('lvBtn').style.opacity = '1';
-    document.getElementById('lvBtn').style.fontSize = '14px';
-    document.getElementById('tf').style.width = '0%';
-    document.getElementById('tf').style.background = '#ffa520';
-    document.getElementById('logBox').innerHTML =
-        '<span class="bl">[SYS]</span> Linkvertise verified ✓<br>' +
-        '<span class="bl">[SYS]</span> Starting key generator...<br>';
-
-    for (let i = 1; i <= 3; i++) document.getElementById('d' + i).textContent = i;
-
-    // If already verified today, skip to step 2
-    if (isVerified()) {
-        showSec(2);
-        runTimer();
-    } else {
-        showSec(1);
-    }
-}
-
-// ════════════════════════════════════════
-// AUTO-START: Check if returning from Linkvertise
-// ════════════════════════════════════════
+// ════════════════════════════════════
+// ON PAGE LOAD
+// ════════════════════════════════════
 window.addEventListener('load', () => {
+    // Check URL params (if Linkvertise redirects back)
     const params = new URLSearchParams(window.location.search);
-    
-    if (params.get("verified") === "1") {
-        // Returning from Linkvertise!
+    if (params.get('verified') === '1' || params.get('r') === '1') {
         markVerified();
-        window.history.replaceState({}, document.title, window.location.pathname);
-        showSec(2);
-        runTimer();
-    } else if (isVerified()) {
-        // Already verified today — skip to generate
-        showSec(2);
-        runTimer();
-    } else {
-        // Not verified — show Linkvertise step
-        showSec(1);
+        window.history.replaceState({}, '', window.location.pathname);
+        startGen();
+        return;
     }
+
+    // Already verified today? Skip to generate
+    if (isVerified()) {
+        startGen();
+        return;
+    }
+
+    // Not verified — show Step 1
+    showSec(1);
 });
 </script>
 </body>
